@@ -1,6 +1,5 @@
 describe('ReqRes API tests', () => {
 
-  // CREATE
   it('Create User - POST /api/users', () => {
     cy.request({
       method: 'POST',
@@ -15,7 +14,6 @@ describe('ReqRes API tests', () => {
     })
   })
 
-  // READ
   it('Read Users - GET /api/users?page=2', () => {
     cy.request({
       method: 'GET',
@@ -27,7 +25,6 @@ describe('ReqRes API tests', () => {
     })
   })
 
-  // UPDATE
   it('Update User - PUT /api/users/2', () => {
     cy.request({
       method: 'PUT',
@@ -42,7 +39,6 @@ describe('ReqRes API tests', () => {
     })
   })
 
-  // DELETE
   it('Delete User - DELETE /api/users/2', () => {
     cy.request({
       method: 'DELETE',
